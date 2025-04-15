@@ -1,0 +1,299 @@
+.maindiv {
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 91.666667%;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 2rem;
+}
+
+.ProdImg {
+    width: 100%;
+    max-width: 28rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.ContProdImg {
+    position: relative;
+    height: 24rem;
+}
+
+.ImgCont {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img.transform {
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+img.transform:hover {
+    transform: scale(1.05);
+}
+
+.DescImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 1rem;
+    min-height: 32rem;
+}
+
+.regresar {
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #740000;
+    color: #740000;
+    font-size: 1.125rem;
+    font-family: 'Special Gothic', sans-serif;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    line-height: 1.625;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0.125rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.regresar svg{
+    width: 16px;
+    height: 18px;
+}
+
+.regresar:focus {
+    --tw-ring-inset: var(--tw-empty,
+            /*!*/
+            /*!*/
+        );
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #ff4d4d;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-shadow);
+}
+
+.regresar:hover {
+    background-color: #f7eded;
+}
+
+.descripcion-prod {
+    font-family: 'Special Gothic', sans-serif;
+}
+
+.titulo-prod {
+    line-height: 1.625;
+    font-weight: 800;
+    font-size: 1.875rem;
+    color: #740000;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.desc-prod {
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.precio-prod {
+    font-size: 1.25rem;
+    color: #740000;
+    font-weight: 500;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.precio-prod span {
+    font-size: 1.5rem;
+}
+
+.Carrito {
+    width: 100%;
+}
+
+.AgCant {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 0.5rem;
+    width: 100%;
+}
+
+.Cont-Cant {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.25rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.Cont-Cant label,
+.Sizes label {
+    color: #a0aec0;
+    font-size: 1rem;
+}
+
+.Cont-Cant input {
+    color: #2d3748;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d2d6dc;
+    width: 4rem;
+    border-radius: 0.125rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: inherit;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.Cont-Cant input:focus {
+    border-color: #ff4d4d;
+    outline: none;
+    --tw-ring-inset: var(--tw-empty,
+            /*!*/
+            /*!*/
+        );
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #ff4d4d;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-shadow);
+}
+
+.Sizes select {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d2d6dc;
+    border-radius: 0.125rem;
+    width: 100%;
+    color: #2d3748;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: inherit;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.5em 1.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.Sizes select:focus {
+    border-color: #ff4d4d;
+    outline: none;
+    --tw-ring-inset: var(--tw-empty,
+            /*!*/
+            /*!*/
+        );
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: #ff4d4d;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color), var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-shadow);
+}
+
+.agCarrito {
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+    background-color: #740000;
+    color: #ffffff;
+    width: 100%;
+    margin-top: 0.5rem;
+    border-radius: 0.125rem;
+    font-family: 'Special Gothic', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.agCarrito:hover {
+    background-color: #a60000;
+}
+
+.agCarrito:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(255, 26, 26, 0.5);
+}
+
+.agCarrito:active {
+    background-color: #3d0000;
+}
+.agCarrito svg{
+    width: 20px;
+    height: 17px;
+}
+
+@media (min-width:640px) {
+    .titulo-prod {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width:768px) {
+    .carta {
+        flex-direction: row;
+        align-items: flex-start;
+        row-gap: 0;
+        column-gap: 1rem;
+    }
+
+    .ProdImg:first-child {
+        width: 50%;
+    }
+
+    .DescImg {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carta {
+        column-gap: 2rem;
+        max-width: 96rem;
+    }
+
+
+}

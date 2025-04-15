@@ -1,0 +1,25 @@
+{%extends './header.html' %}
+{% block title %} Inicio {% endblock %}
+{% block body %}
+<main>
+    <div class="contenedor">
+        <div class="descripcion">
+            <h1>Cafetería EIAO Guadalupe</h1>
+            <p>¡Ordena Aquí!</p>
+        </div>
+        <div class="productos">
+            {% for producto in prods %}
+            <a href="{{ url_for('producto', producto_id=producto.id) }}" class="producto-card">
+                <div class="Imagen">
+                    <div><img src="data:image/jpeg;base64,{{ producto.imagen }}" alt="{{ producto.nombre }}"></div>  </div>
+                <div class="Texto">
+                    <div class="titulo">{{ producto.nombre }} </div>
+                    <div class="descripcioncard">{{ producto.descripcion }}</div>
+                    <div class="precio">$ <span>{{ producto.precio }}</span></div>
+                </div>
+            </a>
+            {%endfor%}
+        </div>
+    </div>
+</main>
+{% endblock %}
